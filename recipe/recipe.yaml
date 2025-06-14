@@ -14,7 +14,7 @@ source:
   sha256: 8e98741832b1c0c36348022107d9536c466a952c8f07343f3632165db6f393c2
 
 build:
-  number: 0
+  number: 1
   script:
     - cargo-bundle-licenses --format yaml --output THIRDPARTY.yml
     - ${{ PYTHON }}  -m pip install . -vv --no-deps --no-build-isolation
@@ -49,7 +49,7 @@ about:
   summary: HTML parser used by django-components written in Rust.
   homepage: https://github.com/django-components/djc-core-html-parser
   description: |
-       HTML parser used by django-components written in Rust.
+    HTML parser used by django-components written in Rust.
   repository: https://github.com/django-components/djc-core-html-parser
   documentation: https://github.com/django-components/djc-core-html-parser/blob/main/README.md
   license: MIT
