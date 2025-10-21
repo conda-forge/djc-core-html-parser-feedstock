@@ -3,7 +3,7 @@ schema_version: 1
 
 context:
   name: djc-core-html-parser
-  version: "1.0.2"
+  version: "1.0.3"
 
 package:
   name: ${{ name|lower }}
@@ -11,10 +11,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/djc_core_html_parser-${{ version }}.tar.gz
-  sha256: 8e98741832b1c0c36348022107d9536c466a952c8f07343f3632165db6f393c2
+  sha256: 735c556440d029739d82b6f69a4c152a2a352c9355166dd5778cc42e664d715f
 
 build:
-  number: 2
+  number: 0
   script:
     - cargo-bundle-licenses --format yaml --output THIRDPARTY.yml
     - ${{ PYTHON }}  -m pip install . -vv --no-deps --no-build-isolation
